@@ -13,21 +13,21 @@ protected:
     unsigned int attackDamage;
 
 public:
-    // Constructors and destructor
+
     ClapTrap();
     ClapTrap(const std::string &name);
     ClapTrap(const ClapTrap &other);
     ~ClapTrap();
 
-    // Assignment operator
+
     ClapTrap &operator=(const ClapTrap &other);
 
-    // Public member functions
+
     void attack(const std::string &target);
     void takeDamage(unsigned int amount);
     void beRepaired(unsigned int amount);
 
-    // Getters
+
     std::string getName() const;
     unsigned int getHitPoints() const;
     unsigned int getEnergyPoints() const;

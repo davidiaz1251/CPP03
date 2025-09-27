@@ -1,6 +1,6 @@
 #include "ScavTrap.hpp"
 
-// Default constructor
+
 ScavTrap::ScavTrap() : ClapTrap()
 {
     this->hitPoints = 100;
@@ -9,7 +9,7 @@ ScavTrap::ScavTrap() : ClapTrap()
     std::cout << "ScavTrap " << name << " is constructed!" << std::endl;
 }
 
-// Parameterized constructor
+
 ScavTrap::ScavTrap(const std::string &name) : ClapTrap(name)
 {
     this->hitPoints = 100;
@@ -18,19 +18,19 @@ ScavTrap::ScavTrap(const std::string &name) : ClapTrap(name)
     std::cout << "ScavTrap " << name << " is constructed!" << std::endl;
 }
 
-// Copy constructor
+
 ScavTrap::ScavTrap(const ScavTrap &other) : ClapTrap(other)
 {
     std::cout << "ScavTrap " << name << " is copied!" << std::endl;
 }
 
-// Destructor
+
 ScavTrap::~ScavTrap()
 {
     std::cout << "ScavTrap " << name << " is destroyed!" << std::endl;
 }
 
-// Assignment operator
+
 ScavTrap &ScavTrap::operator=(const ScavTrap &other)
 {
     if (this != &other)
@@ -41,7 +41,7 @@ ScavTrap &ScavTrap::operator=(const ScavTrap &other)
     return *this;
 }
 
-// Override attack function
+
 void ScavTrap::attack(const std::string &target)
 {
     if (hitPoints == 0)
@@ -60,7 +60,7 @@ void ScavTrap::attack(const std::string &target)
               << ", causing " << attackDamage << " points of damage!" << std::endl;
 }
 
-// Special ability
+
 void ScavTrap::guardGate()
 {
     std::cout << "ScavTrap " << name << " is now in Gate keeper mode!" << std::endl;

@@ -1,6 +1,6 @@
 #include "FragTrap.hpp"
 
-// Default constructor
+
 FragTrap::FragTrap() : ClapTrap()
 {
     this->hitPoints = 100;
@@ -9,7 +9,7 @@ FragTrap::FragTrap() : ClapTrap()
     std::cout << "FragTrap " << name << " is constructed!" << std::endl;
 }
 
-// Parameterized constructor
+
 FragTrap::FragTrap(const std::string &name) : ClapTrap(name)
 {
     this->hitPoints = 100;
@@ -18,19 +18,19 @@ FragTrap::FragTrap(const std::string &name) : ClapTrap(name)
     std::cout << "FragTrap " << name << " is constructed!" << std::endl;
 }
 
-// Copy constructor
+
 FragTrap::FragTrap(const FragTrap &other) : ClapTrap(other)
 {
     std::cout << "FragTrap " << name << " is copied!" << std::endl;
 }
 
-// Destructor
+
 FragTrap::~FragTrap()
 {
     std::cout << "FragTrap " << name << " is destroyed!" << std::endl;
 }
 
-// Assignment operator
+
 FragTrap &FragTrap::operator=(const FragTrap &other)
 {
     if (this != &other)
@@ -41,7 +41,7 @@ FragTrap &FragTrap::operator=(const FragTrap &other)
     return *this;
 }
 
-// Special ability
+
 void FragTrap::highFivesGuys(void)
 {
     std::cout << "FragTrap " << name << " requests positive high fives! ✋" << std::endl;
